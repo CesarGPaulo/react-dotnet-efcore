@@ -43,7 +43,8 @@ export default function Atividade(props) {
                 </div>
                 <p className="card-text">{props.atv.descricao}</p>
                 <div className="d-flex justify-content-end pt-2 border-top">
-                  <button className="btn btn-outline-primary me-2 btn-sm">
+                  <button className="btn btn-outline-primary me-2 btn-sm"
+                    onClick={() => props.selecionaAtividade(props.atv.id)}>
                     <i className="me-1 fa-solid fa-pen-to-square"></i>
                       Editar
                   </button>
