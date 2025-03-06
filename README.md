@@ -1,6 +1,6 @@
-# 📚 Estudos de uma aplicação Fullstack
+# 📚 To-do list FullStack
 
-Este repositório foi criado com o objetivo de explorar e aprender o desenvolvimento de uma aplicação fullstack moderna.
+Este repositório foi criado com o objetivo de explorar o desenvolvimento de uma aplicação fullstack moderna.
 
 ---
 
@@ -39,4 +39,4 @@ O objetivo principal é consolidar conhecimentos no desenvolvimento fullstack, a
 
 ---
 
-Este repositório será atualizado continuamente à medida que o desenvolvimento avança. Fique à vontade para explorar, aprender e contribuir! 😊
+Este repositório é utilizado para estudos, fique à vontade para dar dicas, sugestões ou qualquer outro comentário relevante. 😊
