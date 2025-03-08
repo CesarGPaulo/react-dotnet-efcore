@@ -10,7 +10,9 @@ Este repositório foi criado com o objetivo de explorar o desenvolvimento de uma
 - **React.js** *(em desenvolvimento)*
 
 ### Backend
-- **.NET 6** *(não iniciado)*
+- **.NET 5** *(em desenvolvimento)*
+- **.NET 6** *(não iniciado)* --> para fins de aprendizado, será feita a migração para as versões .NET 6 e .NET 9 
+- **.NET 9** *(não iniciado)* --> para fins de aprendizado, será feita a migração para as versões .NET 6 e .NET 9 
 - **Entity Framework Core** *(não iniciado)*
 
 ---
