@@ -28,9 +28,12 @@ function App() {
     setAtividades([...atividades, response.data]);
   }
 
-  function deletarAtividade(id){
-    const atividadeFiltradas = atividades.filter(atividade => atividade.id !== id)
-    setAtividades(...[atividadeFiltradas]);
+  const deletarAtividade = async (id) => {
+    if(await api.delete(`atividade/${id}`))
+    {
+      const atividadeFiltradas = atividades.filter(atividade => atividade.id !== id)
+      setAtividades(...[atividadeFiltradas]);
+    }
   }
 
   function selecionaAtividade(id){
@@ -38,8 +41,10 @@ function App() {
     setAtividade(atividade[0]);
   }
 
-  function atualizarAtividade(ativ){
-    setAtividades(atividades.map(item => item.id === ativ.id ? ativ : item));
+  const atualizarAtividade = async (ativ) => {
+    const response = await api.put(`atividade/${ativ.id}`, ativ)
+    const {id} = response.data;
+    setAtividades(atividades.map(item => item.id === id ? response.data : item));
     setAtividade({id:0});
   }
 
