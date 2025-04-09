@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -27,10 +28,10 @@ namespace TodoList.API.Controllers
             return _context.Atividades.FirstOrDefault(atv => atv.Id == id);
         }
         [HttpPost]
-        public IEnumerable<Atividade> Post(Atividade atividade){
+        public Atividade Post(Atividade atividade){
             _context.Atividades.Add(atividade);
             if(_context.SaveChanges()>0)
-                return _context.Atividades;
+                return _context.Atividades.FirstOrDefault(atv => atv.Id == atividade.Id);
             else
                 throw new Exception ("Erro ao adicionar uma atividade.");
         }
