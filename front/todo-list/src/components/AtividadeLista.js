@@ -6,9 +6,9 @@ export default function AtividadeLista(props) {
     <div className='mt-3'>
     {props.atividades.map(atv => (
       <Atividade key={atv.id}
-      deletarAtividade={props.deletarAtividade}
       atv={atv}
-      selecionaAtividade = {props.selecionaAtividade}
+      selecionaAtividade = {props.selecionaAtividade}      
+      handleConfirmaCancelamento={props.handleConfirmaCancelamento}
       />
     ))}
 </div>

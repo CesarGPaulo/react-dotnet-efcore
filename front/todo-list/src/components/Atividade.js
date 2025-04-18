@@ -48,7 +48,7 @@ export default function Atividade(props) {
                   </button>
                   <button 
                     className="btn btn-outline-danger me-2 btn-sm" 
-                    onClick={() => props.deletarAtividade(props.atv.id)}>
+                    onClick={() => props.handleConfirmaCancelamento(props.atv.id)}>
                     <i className="me-1 fa-regular fa-trash-can"></i>
                       Excluir
                   </button>
