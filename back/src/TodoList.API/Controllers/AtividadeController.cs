@@ -5,8 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SQLitePCL;
-using TodoList.API.Data;
-using TodoList.API.Models;
+using TodoList.Data.Context;
+using TodoList.Domain.Entities;
 
 namespace TodoList.API.Controllers
 {
