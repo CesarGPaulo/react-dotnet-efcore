@@ -3,10 +3,10 @@ using TodoList.Domain.Entities;
 
 namespace TodoList.Domain.Interfaces.Repositories
 {
-    public interface IAtividadeRepo
+    public interface IAtividadeRepo : IGeneralRepo
     {
         Task<Atividade[]> PegaTodasAsync();
-        Task<Atividade> PegaPorIdAsync();
-        Task<Atividade> PegaPorTituloAsync();
+        Task<Atividade> PegaPorIdAsync(int id);
+        Task<Atividade> PegaPorTituloAsync(string titulo);
     }
 }

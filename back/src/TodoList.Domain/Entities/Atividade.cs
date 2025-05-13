@@ -21,7 +21,7 @@ namespace TodoList.Domain.Entities
         }
         public Atividade() => DataCriacao = DateTime.Now;
         public void Concluir(){
-            if(DataConclusao == null)
+            if(DataConclusao == DateTime.MinValue)
                 DataConclusao = DateTime.Now;
             else
                 throw new Exception($"Atividade já concluída em: {DataConclusao.ToString("dd/MM/yyyy hh:mm")}");

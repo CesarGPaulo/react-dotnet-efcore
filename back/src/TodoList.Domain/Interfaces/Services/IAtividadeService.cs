@@ -9,7 +9,7 @@ namespace TodoList.Domain.Interfaces.Services
         Task<Atividade> AtualizarAtividade(Atividade model);
         Task<bool> DeletarAtividade (int atividadeId);
         Task <bool> ConcluirAtividade(Atividade model);
-        Task<Atividade> PegaTodasAtividadePorIdAsync (int atividadeId);
-        Task<Atividade []> PegaTodasAtividadesAsync (Atividade model);
+        Task<Atividade> PegarAtividadePorIdAsync (int atividadeId);
+        Task<Atividade []> PegarTodasAtividadesAsync ();
     }
 }
